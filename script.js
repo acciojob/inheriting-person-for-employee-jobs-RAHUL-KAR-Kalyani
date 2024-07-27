@@ -1,7 +1,7 @@
 class Person {
     constructor(name, age) {
-        this.name = name; // Store the name
-        this.age = age;   // Store the age
+        this.name = name;
+        this.age = age;
     }
 
     greet() {
@@ -11,8 +11,8 @@ class Person {
 
 class Employee extends Person {
     constructor(name, age, jobTitle) {
-        super(name, age); // Call the parent class constructor
-        this.jobTitle = jobTitle; // Store the job title
+        super(name, age);
+        this.jobTitle = jobTitle;
     }
 
     jobGreet() {
@@ -20,12 +20,12 @@ class Employee extends Person {
     }
 }
 const alice = new Person("Alice", 25);
-alice.greet(); // Output: Hello, my name is Alice, I am 25 years old.
+alice.greet();
 
 const bob = new Employee("Bob", 30, "Manager");
-bob.jobGreet(); // Output: Hello, my name is Bob, I am 30 years old, and my job title is Manager.
+bob.jobGreet();
 
-bob.greet(); // Output: Hello, my name is Bob, I am 30 years old.
+bob.greet();
 
 
 // Do not change code below this line
